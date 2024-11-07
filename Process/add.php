@@ -8,7 +8,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $nama = $_POST['nama'];
     $nim = $_POST['nim'];
     $perguruan = $_POST['perguruan'];
-    $prodi = $_POST['perguruan'];
+    $prodi = $_POST['prodi'];
     $query->execute(['nama' => $nama, 'nim' => $nim, 'perguruan' => $perguruan, 'prodi' => $prodi]);
     unset($_POST);
     header('Location: ../index.php');
